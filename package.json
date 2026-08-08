@@ -1,0 +1,16 @@
+{
+  "name": "coding-conventions-workshop",
+  "version": "0.0.0",
+  "private": true,
+  "description": "docs/coding-conventions.md のワークショップ用「悪いコード」教材",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "start": "tsc && node dist/legacy-app/main.js",
+    "test:bad": "tsc && node --test dist/chapters/ch11-testing.bad.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}

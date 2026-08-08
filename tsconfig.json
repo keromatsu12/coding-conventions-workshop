@@ -1,0 +1,28 @@
+{
+  // ⚠️ この設定ファイル自体もワークショップの演習対象です（第12章 12-4「型チェック」）。
+  //    strict が無効なので、any も暗黙の any も素通りします。
+  //    「まずどのフラグから有効にするか」を、第12章 12-8 の手順で考えてみてください。
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "lib": ["ES2022", "DOM"],
+    "rootDir": "src",
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // --- ここから下が「緩い」設定 ---
+    "strict": false,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": false
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
