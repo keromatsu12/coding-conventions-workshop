@@ -5,8 +5,14 @@ description: docs/coding-conventions.md の観点でコードをレビューし�
 
 # 規約レビュー
 
-規約の中身は `coding-conventions` スキルにある。このスキルは**それを使ってレビューする手順**。
-迷ったら `coding-conventions` の該当 references を読む（全文の原文は読まない）。
+レビューに必要な規約はこのスキルの `references/` にまとめてある。
+
+| 読むファイル | 内容 |
+| --- | --- |
+| `references/review-criteria.md` | 10観点それぞれの見るポイントと ❌/✅ 例、指摘の言い回し |
+| `references/code-smells.md` | 17-2 のコードの臭いカタログと、このリポジトリでの出現例 |
+
+さらに細部が要るときは `coding-conventions` スキルの references、原文は `docs/coding-conventions.md` の該当行だけを読む（全文は読まない）。
 
 ## 1. 対象を決める
 
@@ -45,7 +51,7 @@ description: docs/coding-conventions.md の観点でコードをレビューし�
 
 パフォーマンスは、N+1 など明らかな I/O の問題があるときだけ指摘する。計測なしのCPU最適化は求めない（第18章）。
 
-構造的な臭いは 17-2 のカタログ（`coding-conventions/references/refactoring.md`）で名前を付けて指摘する（「長すぎる関数」「特徴の横恋慕」など）。
+各観点の具体例は `references/review-criteria.md`。構造的な臭いは `references/code-smells.md` のカタログで名前を付けて指摘する（「長すぎる関数」「特徴の横恋慕」など）。
 
 ## 4. 指摘の書き方（13-5）
 

@@ -5,6 +5,8 @@ description: 変更を「意味の単位」でコミットし、小さなPRに�
 
 # コミットとPR
 
+型の一覧と例、PRの分割順、ブランチ運用、ツール導入時のコミットの分け方は `references/git-conventions.md` にある。
+
 ## 1. 差分を把握する
 
 ```bash
